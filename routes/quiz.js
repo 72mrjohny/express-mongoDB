@@ -3,7 +3,7 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res) => {
-    res.render('users', { title: 'Users' });
+    res.render('quiz', { title: 'Quiz' });
 });
 
 
