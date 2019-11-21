@@ -3,3 +3,15 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+
+  form(method='post').generator
+    label.generator__input-name Wybierz plec
+      select.generator__select(name='gender')
+        option(value='both' selected='') Wszyscy
+        option(value='female') Kobiety
+        option(value='male') Mezczyzni
+    label.generator__input-name Liczba osob:
+      input.generator__input(name='usersNumber' type='number' value='10')
+    input.button(type='submit' value='Pobierz użytkowników')
+  div.user-list
